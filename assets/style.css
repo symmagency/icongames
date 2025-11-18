@@ -1,3 +1,10 @@
+.collection.has-carousel .holder-collection .holder-left {
+	justify-content: flex-start;
+	text-align: left;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
 .container,
 .h-inline-container {
 	max-width: 1000px;
@@ -97,7 +104,59 @@
 }
 
 .splide:not(.splide--ttb) .splide__pagination button:not(.is-active) {
-    background: #d9d9d920;
+	background: #d9d9d920;
+}
+
+.banner-stopwatch-holder:before {
+	content: 'A promoção acaba em';
+	color: #fff;
+	font-size: 16px;
+	max-width: 100px;
+	font-weight: normal;
+}
+
+.banner-stopwatch-holder {
+	text-align: left;
+	background: #0000004d;
+	padding: 24px;
+	width: calc(100% - 40px);
+	right: 0;
+	left: 0;
+	margin: auto;
+	backdrop-filter: blur(4px);
+	justify-content: space-between;
+}
+
+.banner-stopwatch-holder i {
+	display: none;
+}
+
+.banner-stopwatch-holder .stopwatch {
+	padding: 12px 20px;
+	background: var(--color-general-primary);
+	border-radius: 8px;
+	font-size: 14px;
+}
+
+.holder-collection .collection-link {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	min-width: auto;
+}
+
+.holder-collection .collection-link:after {
+	content: '';
+	width: 20px;
+	height: 20px;
+	background: url(https://symmagency.github.io/icongames/assets/icon-chev-down.svg)
+		center no-repeat;
+	display: block;
+}
+
+.holder-collection .collection-name {
+	font-weight: normal;
+	font-size: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -143,8 +202,8 @@
 	.products-list .splide.is-active .splide__list::-webkit-scrollbar-thumb {
 		background: #d7df21;
 	}
-	
+
 	.products-list ul.splide__pagination {
-		display: none!important;
+		display: none !important;
 	}
 }
