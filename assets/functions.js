@@ -1,9 +1,35 @@
-$('.header-content .mini-cart-holder').before(`
-    <div class="icon-search i-s-header"></div>
-`);
+$(document).ready(function(){
 
-$('.icon-search.i-s-header').click(function(){
-    
-$('.holder-search').toggleClass('open');
-    
+function tryInsertIconSearch(retries = 10, delay = 200) {
+    if (window.innerWidth <= 768) {
+        const $miniCartHolder = $('.header-content .mini-cart-holder');
+        if ($miniCartHolder.length && !$('.icon-search.i-s-header').length) {
+            $miniCartHolder.before(`
+                <div class="icon-search i-s-header"></div>
+            `);
+            $('.icon-search.i-s-header').on('click', function(){
+                $('.holder-search').toggleClass('open');
+            });
+        } else if (!$miniCartHolder.length && retries > 0) {
+            setTimeout(function() {
+                tryInsertIconSearch(retries - 1, delay);
+            }, delay);
+        }
+    }
+}
+
+// Executa na inicialização e re-executa ao redimensionar a janela (apenas para inserir, não duplicar)
+$(document).ready(function () {
+    tryInsertIconSearch();
+});
+
+$(window).on('resize', function () {
+    // Remove o botão se ficar maior que 768px, evita duplicação se reaparecer
+    if (window.innerWidth > 768) {
+        $('.icon-search.i-s-header').remove();
+    } else {
+        tryInsertIconSearch();
+    }
+});
+
 });
