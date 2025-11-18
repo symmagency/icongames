@@ -21,6 +21,15 @@ function tryInsertIconSearch(retries = 10, delay = 200) {
 // Executa na inicialização e re-executa ao redimensionar a janela (apenas para inserir, não duplicar)
 $(document).ready(function () {
     tryInsertIconSearch();
+
+    // Adiciona a lógica para mover o discount-tag para dentro do product-prices
+    $('.box-product').each(function () {
+        const discount = $(this).find('.holder-image .discount-tag');
+        const target = $(this).find('.product-prices');
+        if (discount.length && target.length) {
+            target.append(discount);
+        }
+    });
 });
 
 $(window).on('resize', function () {
