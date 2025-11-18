@@ -1,0 +1,150 @@
+.container,
+.h-inline-container {
+	max-width: 1000px;
+}
+
+#section-header .h-inline-container {
+	max-width: 100%;
+	padding: 0px 40px !important;
+}
+
+.header-content {
+	padding: 10px 0;
+}
+
+.categories_highlight .splide:not(.splide--ttb) .splide__arrows {
+	display: none;
+}
+
+.c-highlight-header__title {
+	width: 100%;
+	text-align: center;
+	font-weight: 400;
+	font-size: 32px;
+}
+
+.categories_highlight .splide:not(.splide--ttb) .splide__pagination button {
+	margin: 0;
+	border-radius: 0;
+	width: 100%;
+	height: 2px;
+}
+
+.categories_highlight .splide__pagination li {
+	width: 100%;
+	flex: 1;
+}
+
+.categories_highlight .splide:not(.splide--ttb) .splide__pagination {
+	flex-direction: row;
+}
+
+.c-highlight-container a {
+	border: 1px solid var(--color-general-primary);
+	border-radius: 8px;
+	height: 50px;
+	font-size: 16px;
+}
+
+.c-highlight-content--slide img {
+	display: none;
+}
+
+.header-hightlightbar .container:after {
+	content: '';
+	width: 55px;
+	height: 37px;
+	background: url(https://i.imgur.com/0x3uIwD.png) center no-repeat;
+	position: relative;
+	margin-left: 10px;
+	display: block;
+}
+
+.header-hightlightbar .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-hightlightbar {
+	padding: 0;
+}
+
+.h-inline-container .categories {
+	margin: 0;
+}
+
+.main-banner .splide__list {
+	padding: 20px !important;
+	gap: 10px;
+}
+
+.box-product .holder-image img {
+	height: 300px;
+	max-height: 280px;
+	border-radius: 6px;
+	padding: 0;
+}
+
+.box-product .product-prices .installments-text,
+.box-product.--flag-below-image .holder-info .holder-flags {
+	display: none;
+}
+
+.image-ratio {
+	padding: 0;
+	height: 300px;
+}
+
+.splide:not(.splide--ttb) .splide__pagination button:not(.is-active) {
+    background: #d9d9d920;
+}
+
+@media screen and (max-width: 768px) {
+	.main-banner .splide__slide {
+		max-width: calc(100% - 0px) !important;
+	}
+
+	.main-banner .splide__list {
+		width: 100% !important;
+	}
+
+	.main-banner .splide:not(.splide--ttb) .splide__pagination button {
+		width: 16px !important;
+		height: 2px !important;
+	}
+
+	.products-list .splide__slide {
+		width: 230px !important;
+	}
+
+	#section-header .h-inline-container {
+		padding: 0px 16px !important;
+	}
+
+	.products-list .splide.is-active .splide__list {
+		justify-content: flex-start;
+		width: 100% !important;
+		overflow-x: scroll !important;
+		transform: none !important;
+	}
+
+	/* Largura da barra */
+	.products-list .splide.is-active .splide__list::-webkit-scrollbar {
+		height: 2px;
+	}
+
+	/* Trilha */
+	.products-list .splide.is-active .splide__list::-webkit-scrollbar-track {
+		background: #d9d9d920;
+	}
+
+	/* Thumb */
+	.products-list .splide.is-active .splide__list::-webkit-scrollbar-thumb {
+		background: #d7df21;
+	}
+	
+	.products-list ul.splide__pagination {
+		display: none!important;
+	}
+}
