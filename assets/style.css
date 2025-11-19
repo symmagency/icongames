@@ -35,6 +35,11 @@ section.collection.collection-6 .product-old-price {
 	color: #00000040;
 }
 
+	.collection-6 .product-prices .discount-tag {
+		background: #000;
+		color: #fff;
+	}
+
 section.collection.collection-6
 	.products-list
 	.splide.is-active
@@ -49,18 +54,44 @@ section.collection.collection-6
 	background: #000000;
 }
 
+section.collection.collection-10
+	.products-list
+	.splide.is-active
+	.splide__list::-webkit-scrollbar-track {
+	background: #00000030;
+}
+
+section.collection.collection-10
+	.products-list
+	.splide.is-active
+	.splide__list::-webkit-scrollbar-thumb {
+	background: #000000;
+}
+
 /* Fim Collection Promo */
 
+/* Chrome, Safari, Edge */
 .products-list .splide.is-active .splide__list::-webkit-scrollbar {
-	height: 2px;
+  height: 4px;
 }
 
 .products-list .splide.is-active .splide__list::-webkit-scrollbar-track {
-	background: #d9d9d920;
+  background: #d9d9d920;
 }
 
 .products-list .splide.is-active .splide__list::-webkit-scrollbar-thumb {
-	background: #d7df21;
+  background: #d7df21;
+}
+
+/* Firefox */
+.products-list .splide.is-active .splide__list {
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: #d7df21 #d9d9d920; /* thumb | track */
+}
+
+/* Garante que a barra apareça mesmo sem hover */
+.products-list .splide.is-active .splide__list {
+  overflow-x: scroll !important;
 }
 
 .collection.has-carousel .holder-collection .holder-left {
@@ -310,6 +341,33 @@ section.collection.collection-6
 	display: flex;
 }
 
+.collection-10:before {
+    content: "";
+    width: 100%;
+    height: 80px;
+    background: url(https://symmagency.github.io/icongames/assets/psplus.png) top no-repeat;
+    background-size: 100%;
+    display: block;
+}
+
+.collection-10 {
+    background: #ebedf4;
+    padding-bottom: 60px;
+    border-radius: 0 0 16px 16px;
+}
+
+.collection-10 .holder-collection .holder-left h2 {
+    color: #000;
+}
+
+.collection-10 .box-product .product-name, .collection-10 .box-product .product-prices * {
+    color: #000;
+}
+
+.collection-10 .box-product .product-prices .product-old-price {
+    opacity: .5;
+}
+
 @media screen and (max-width: 768px) {
 	.main-banner .splide__slide {
 		max-width: calc(100% - 0px) !important;
@@ -377,11 +435,6 @@ section.collection.collection-6
 		justify-content: center;
 		width: fit-content;
 		font-size: 11px;
-	}
-
-	.collection-6 .product-prices .discount-tag {
-		background: #000;
-		color: #fff;
 	}
 
 	.box-product .product-prices {
