@@ -1,482 +1,482 @@
-/* Collection Promo */
-section.collection.collection-6 {
-	background: #d7df21;
-	padding: 40px 0px 60px;
-	border-radius: 16px;
-	max-width: 1000px;
-	margin: 60px auto 0;
-}
-
-section.collection.collection-6 h2.theme-title.collection-name {
-	color: #000;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-section.collection.collection-6 h2.theme-title.collection-name:before {
-	content: '';
-	width: 32px;
-	height: 32px;
-	background: url(https://symmagency.github.io/icongames/assets/icon-gift.svg)
-		center no-repeat;
-	display: flex;
-}
-
-section.collection.collection-6 .holder-flags + .product-name {
-	color: #000;
-}
-
-section.collection.collection-6 .product-old-price + .product-actual-price {
-	color: #000 !important;
-}
-
-section.collection.collection-6 .product-old-price {
-	color: #00000040;
-}
-
-	.collection-6 .product-prices .discount-tag {
-		background: #000;
-		color: #fff;
-	}
-
-section.collection.collection-6
-	.products-list
-	.splide.is-active
-	.splide__list::-webkit-scrollbar-track {
-	background: #00000030;
-}
-
-section.collection.collection-6
-	.products-list
-	.splide.is-active
-	.splide__list::-webkit-scrollbar-thumb {
-	background: #000000;
-}
-
-section.collection.collection-10
-	.products-list
-	.splide.is-active
-	.splide__list::-webkit-scrollbar-track {
-	background: #00000030;
-}
-
-section.collection.collection-10
-	.products-list
-	.splide.is-active
-	.splide__list::-webkit-scrollbar-thumb {
-	background: #000000;
-}
-
-/* Fim Collection Promo */
-
 /* Chrome, Safari, Edge */
 .products-list .splide.is-active .splide__list::-webkit-scrollbar {
-  height: 4px;
-}
-
-.products-list .splide.is-active .splide__list::-webkit-scrollbar-track {
-  background: #d9d9d920;
-}
-
-.products-list .splide.is-active .splide__list::-webkit-scrollbar-thumb {
-  background: #d7df21;
-}
-
-/* Firefox */
-.products-list .splide.is-active .splide__list {
-  scrollbar-width: thin; /* auto | thin | none */
-  scrollbar-color: #d7df21 #d9d9d920; /* thumb | track */
-}
-
-/* Garante que a barra apareça mesmo sem hover */
-.products-list .splide.is-active .splide__list {
-  overflow-x: scroll !important;
-}
-
-.collection.has-carousel .holder-collection .holder-left {
-	justify-content: flex-start;
-	text-align: left;
-	flex-direction: row;
-	flex-wrap: nowrap;
-}
-
-.container,
-.h-inline-container {
-	max-width: 1000px;
-}
-
-#section-header .h-inline-container {
-	max-width: 100%;
-	padding: 0px 40px !important;
-}
-
-.header-content {
-	padding: 10px 0;
-}
-
-.categories_highlight .splide:not(.splide--ttb) .splide__arrows {
-	display: none;
-}
-
-.c-highlight-header__title {
-	width: 100%;
-	text-align: center;
-	font-weight: 400;
-	font-size: 32px;
-}
-
-.categories_highlight .splide:not(.splide--ttb) .splide__pagination button {
-	margin: 0;
-	border-radius: 0;
-	width: 100%;
 	height: 2px;
-}
-
-.categories_highlight .splide__pagination li {
-	width: 100%;
-	flex: 1;
-}
-
-.categories_highlight .splide:not(.splide--ttb) .splide__pagination {
-	flex-direction: row;
-}
-
-.c-highlight-container a {
-	border: 1px solid var(--color-general-primary);
-	border-radius: 8px;
-	height: 50px;
-	font-size: 16px;
-}
-
-.c-highlight-content--slide img {
-	display: none;
-}
-
-.header-hightlightbar .container:after {
-	content: '';
-	width: 55px;
-	height: 37px;
-	background: url(https://i.imgur.com/0x3uIwD.png) center no-repeat;
-	position: relative;
-	margin-left: 10px;
-	display: block;
-}
-
-.header-hightlightbar .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.header-hightlightbar {
-	padding: 0;
-}
-
-.h-inline-container .categories {
-	margin: 0;
-}
-
-.main-banner .splide__list {
-	padding: 20px !important;
-	gap: 10px;
-}
-
-.box-product .holder-image img {
-	height: 300px;
-	max-height: 296px;
-	padding: 0;
-}
-
-.box-product .product-prices .installments-text,
-.box-product.--flag-below-image .holder-info .holder-flags {
-	display: none;
-}
-
-.image-ratio {
-	padding: 0;
-	height: 296px;
-	border-radius: 8px;
-	overflow: hidden;
-}
-
-.splide:not(.splide--ttb) .splide__pagination button:not(.is-active) {
+  }
+  
+  .products-list .splide.is-active .splide__list::-webkit-scrollbar-track {
 	background: #d9d9d920;
-}
-
-.banner-stopwatch-holder:before {
-	content: 'A promoção acaba em';
-	color: #fff;
-	font-size: 16px;
-	max-width: 100px;
-	font-weight: normal;
-}
-
-.banner-stopwatch-holder {
-	text-align: left;
-	background: #0000004d;
-	padding: 24px;
-	width: calc(100% - 40px);
-	right: 0;
-	left: 0;
-	margin: auto;
-	backdrop-filter: blur(4px);
-	justify-content: space-between;
-}
-
-.banner-stopwatch-holder i {
-	display: none;
-}
-
-.banner-stopwatch-holder .stopwatch {
-	padding: 12px 20px;
-	background: var(--color-general-primary);
-	border-radius: 8px;
-	font-size: 14px;
-}
-
-.holder-collection .collection-link {
-	margin: 0;
-	padding: 0;
-	font-size: 0;
-	min-width: auto;
-}
-
-.holder-collection .collection-link:after {
-	content: '';
-	width: 20px;
-	height: 20px;
-	background: url(https://symmagency.github.io/icongames/assets/icon-chev-down.svg)
-		center no-repeat;
-	display: block;
-}
-
-.holder-collection .collection-name {
-	font-weight: normal;
-	font-size: 24px;
-	width: fit-content;
-	margin-right: 10px;
-}
-
-.c-highlight-container {
-	min-height: auto;
-}
-
-.product-prices.--space-top-small .flex.-wrap {
-	flex-direction: row;
-	flex-wrap: nowrap;
-	gap: 10px;
-}
-
-.product-old-price {
-	width: fit-content;
-	margin: 0;
-	font-size: 12px !important;
-}
-
-.mini-cart-holder .-align:before {
-	content: '';
-	width: 24px;
-	height: 24px;
-	background: url(https://symmagency.github.io/icongames/assets/icon-cart.svg)
-		center no-repeat;
-}
-
-.mini-cart-holder .-align svg {
-	display: none;
-}
-
-.cart-quantity {
-	position: absolute;
-	top: 5px;
-	right: auto;
-	left: 14px;
-	width: 18px;
-	height: 18px;
-	font-size: 12px;
-	color: #000;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.mini-cart-holder {
-	width: fit-content;
-}
-
-.rkt-header-shopping-page-redirect svg {
-	display: none;
-}
-
-.rkt-header-shopping-page-redirect:before {
-	content: 'Minha conta';
-	font-size: 12px;
-	line-height: 100%;
-	display: flex;
-	align-items: center;
-	background: var(--color-general-primary);
-	padding: 4px 12px;
-	border-radius: 999px;
-	color: #000;
-}
-
-.menu-trigger-holder {
-	order: 2;
-}
-
-.menu-trigger-holder svg.mobile.-block {
-	display: none !important;
-}
-
-.menu-trigger {
-	padding: 0;
-}
-
-.menu-trigger:before {
-	content: '';
-	width: 24px;
-	height: 24px;
-	background: url(https://symmagency.github.io/icongames/assets/icon-menu.svg)
-		center no-repeat;
-	display: flex;
-}
-
-.collection-10:before {
-    content: "";
-    width: 100%;
-    height: 80px;
-    background: url(https://symmagency.github.io/icongames/assets/psplus.png) top no-repeat;
-    background-size: 100%;
-    display: block;
-}
-
-.collection-10 {
-    background: #ebedf4;
-    padding-bottom: 60px;
-    border-radius: 0 0 16px 16px;
-}
-
-.collection-10 .holder-collection .holder-left h2 {
-    color: #000;
-}
-
-.collection-10 .box-product .product-name, .collection-10 .box-product .product-prices * {
-    color: #000;
-}
-
-.collection-10 .box-product .product-prices .product-old-price {
-    opacity: .5;
-}
-
-@media screen and (max-width: 768px) {
-	.main-banner .splide__slide {
-		max-width: calc(100% - 0px) !important;
-	}
-
-	.header-content
-		.header-content-right
-		> div:not(.rkt-header-shopping-page-redirect) {
-		width: 60px;
-	}
-
-	.main-banner .splide__list {
-		width: 100% !important;
-	}
-
-	.main-banner .splide:not(.splide--ttb) .splide__pagination button {
-		width: 16px !important;
-		height: 2px !important;
-	}
-
-	.products-list .splide__slide {
-		width: 230px !important;
-	}
-
-	#section-header .h-inline-container {
-		padding: 0px 16px !important;
-	}
-
-	.products-list .splide.is-active .splide__list {
-		justify-content: flex-start;
-		width: 100% !important;
-		overflow-x: scroll !important;
-		transform: none !important;
-	}
-
-	.products-list ul.splide__pagination {
-		display: none !important;
-	}
-
-	.icon-search.i-s-header {
-		width: 40px;
-		height: 44px;
-		background: url(https://symmagency.github.io/icongames/assets/icon-search.svg)
-			no-repeat center;
-	}
-
-	.holder-search {
-		display: none !important;
-	}
-
-	.holder-search.open {
-		display: block !important;
-	}
-	.c-highlight-header__title.--mobile {
-		font-size: 24px;
-		text-align: left;
-	}
-
-	.product-prices .discount-tag {
-		height: 20px;
-		border: 0;
-		padding: 0 8px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: fit-content;
-		font-size: 11px;
-	}
-
-	.box-product .product-prices {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: flex-end;
-		gap: 8px;
-	}
-
-	.banner_3-7 .holder-banner-3 > .online {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		width: 100%;
-		overflow-x: scroll;
-		position: relative;
-		padding-bottom: 32px;
-	}
-
-	.banner_3-7 .online .banner {
-		min-width: 304px;
-	}
-
-	.banner_3-7 .holder-banner-3:before {
-		content: 'Destaques da semana';
-		display: block;
-		font-size: 24px;
-		font-weight: normal;
-		margin-bottom: 20px;
-	}
-
-	.banner_3-7 .holder-banner-3 > .online::-webkit-scrollbar {
-		height: 2px;
-		bottom: 0px;
-		position: relative;
-	}
-
-	.banner_3-7 .holder-banner-3 > .online::-webkit-scrollbar-track {
-		background: #d9d9d920;
-	}
-
-	.banner_3-7 .holder-banner-3 > .online::-webkit-scrollbar-thumb {
-		background: #d7df21;
-	}
-}
+  }
+  
+  .products-list .splide.is-active .splide__list::-webkit-scrollbar-thumb {
+	background: #d7df21;
+  }
+  
+  
+  /* Collection Promo */
+  section.collection.collection-6 {
+	  background: #d7df21;
+	  padding: 40px 0px 60px;
+	  border-radius: 16px;
+	  max-width: 1000px;
+	  margin: 60px auto 0;
+  }
+  
+  section.collection.collection-6 h2.theme-title.collection-name {
+	  color: #000;
+	  display: flex;
+	  align-items: center;
+	  gap: 10px;
+  }
+  
+  section.collection.collection-6 h2.theme-title.collection-name:before {
+	  content: '';
+	  width: 32px;
+	  height: 32px;
+	  background: url(https://symmagency.github.io/icongames/assets/icon-gift.svg)
+		  center no-repeat;
+	  display: flex;
+  }
+  
+  section.collection.collection-6 .holder-flags + .product-name {
+	  color: #000;
+  }
+  
+  section.collection.collection-6 .product-old-price + .product-actual-price {
+	  color: #000 !important;
+  }
+  
+  section.collection.collection-6 .product-old-price {
+	  color: #00000040;
+  }
+  
+	  .collection-6 .product-prices .discount-tag {
+		  background: #000;
+		  color: #fff;
+	  }
+  
+	  .collection-10 .product-prices .discount-tag {
+		  background: #0541C7;
+	  }
+	  
+	  .collection-10 .box-product .discount-tag span {
+		  color: #fff;
+	  }
+  
+  
+  section.collection.collection-6
+	  .products-list
+	  .splide.is-active
+	  .splide__list::-webkit-scrollbar-track {
+	  background: #00000030;
+  }
+  
+  section.collection.collection-6
+	  .products-list
+	  .splide.is-active
+	  .splide__list::-webkit-scrollbar-thumb {
+	  background: #000000;
+  }
+  
+  section.collection.collection-10
+	  .products-list
+	  .splide.is-active
+	  .splide__list::-webkit-scrollbar-track {
+	  background: #00000030;
+  }
+  
+  section.collection.collection-10
+	  .products-list
+	  .splide.is-active
+	  .splide__list::-webkit-scrollbar-thumb {
+	  background: #000000;
+  }
+  
+  /* Fim Collection Promo */
+  
+  .collection.has-carousel .holder-collection .holder-left {
+	  justify-content: flex-start;
+	  text-align: left;
+	  flex-direction: row;
+	  flex-wrap: nowrap;
+  }
+  
+  .container,
+  .h-inline-container {
+	  max-width: 1000px;
+  }
+  
+  #section-header .h-inline-container {
+	  max-width: 100%;
+	  padding: 0px 40px !important;
+  }
+  
+  .header-content {
+	  padding: 10px 0;
+  }
+  
+  .categories_highlight .splide:not(.splide--ttb) .splide__arrows {
+	  display: none;
+  }
+  
+  .c-highlight-header__title {
+	  width: 100%;
+	  text-align: center;
+	  font-weight: 400;
+	  font-size: 32px;
+  }
+  
+  .categories_highlight .splide:not(.splide--ttb) .splide__pagination button {
+	  margin: 0;
+	  border-radius: 0;
+	  width: 100%;
+	  height: 2px;
+  }
+  
+  .categories_highlight .splide__pagination li {
+	  width: 100%;
+	  flex: 1;
+  }
+  
+  .categories_highlight .splide:not(.splide--ttb) .splide__pagination {
+	  flex-direction: row;
+  }
+  
+  .c-highlight-container a {
+	  border: 1px solid var(--color-general-primary);
+	  border-radius: 8px;
+	  height: 50px;
+	  font-size: 16px;
+  }
+  
+  .c-highlight-content--slide img {
+	  display: none;
+  }
+  
+  .header-hightlightbar .container:after {
+	  content: '';
+	  width: 55px;
+	  height: 37px;
+	  background: url(https://i.imgur.com/0x3uIwD.png) center no-repeat;
+	  position: relative;
+	  margin-left: 10px;
+	  display: block;
+  }
+  
+  .header-hightlightbar .container {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+  }
+  
+  .header-hightlightbar {
+	  padding: 0;
+  }
+  
+  .h-inline-container .categories {
+	  margin: 0;
+  }
+  
+  .main-banner .splide__list {
+	  padding: 20px !important;
+	  gap: 10px;
+  }
+  
+  .box-product .holder-image img {
+	  height: 300px;
+	  max-height: 296px;
+	  padding: 0;
+  }
+  
+  .box-product .product-prices .installments-text,
+  .box-product.--flag-below-image .holder-info .holder-flags {
+	  display: none;
+  }
+  
+  .image-ratio {
+	  padding: 0;
+	  height: 296px;
+	  border-radius: 8px;
+	  overflow: hidden;
+  }
+  
+  .splide:not(.splide--ttb) .splide__pagination button:not(.is-active) {
+	  background: #d9d9d920;
+  }
+  
+  .banner-stopwatch-holder:before {
+	  content: 'A promoção acaba em';
+	  color: #fff;
+	  font-size: 16px;
+	  max-width: 100px;
+	  font-weight: normal;
+  }
+  
+  .banner-stopwatch-holder {
+	  text-align: left;
+	  background: #0000004d;
+	  padding: 24px;
+	  width: calc(100% - 40px);
+	  right: 0;
+	  left: 0;
+	  margin: auto;
+	  backdrop-filter: blur(4px);
+	  justify-content: space-between;
+  }
+  
+  .banner-stopwatch-holder i {
+	  display: none;
+  }
+  
+  .banner-stopwatch-holder .stopwatch {
+	  padding: 12px 20px;
+	  background: var(--color-general-primary);
+	  border-radius: 8px;
+	  font-size: 14px;
+  }
+  
+  .holder-collection .collection-link {
+	  margin: 0;
+	  padding: 0;
+	  font-size: 0;
+	  min-width: auto;
+  }
+  
+  .holder-collection .collection-link:after {
+	  content: '';
+	  width: 20px;
+	  height: 20px;
+	  background: url(https://symmagency.github.io/icongames/assets/icon-chev-down.svg)
+		  center no-repeat;
+	  display: block;
+  }
+  
+  .holder-collection .collection-name {
+	  font-weight: normal;
+	  font-size: 24px;
+	  width: fit-content;
+	  margin-right: 10px;
+  }
+  
+  .c-highlight-container {
+	  min-height: auto;
+  }
+  
+  .product-prices.--space-top-small .flex.-wrap {
+	  flex-direction: row;
+	  flex-wrap: nowrap;
+	  gap: 10px;
+  }
+  
+  .product-old-price {
+	  width: fit-content;
+	  margin: 0;
+	  font-size: 12px !important;
+  }
+  
+  .mini-cart-holder .-align:before {
+	  content: '';
+	  width: 24px;
+	  height: 24px;
+	  background: url(https://symmagency.github.io/icongames/assets/icon-cart.svg)
+		  center no-repeat;
+  }
+  
+  .mini-cart-holder .-align svg {
+	  display: none;
+  }
+  
+  .cart-quantity {
+	  position: absolute;
+	  top: 5px;
+	  right: auto;
+	  left: 14px;
+	  width: 18px;
+	  height: 18px;
+	  font-size: 12px;
+	  color: #000;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+  }
+  
+  .mini-cart-holder {
+	  width: fit-content;
+  }
+  
+  .rkt-header-shopping-page-redirect svg {
+	  display: none;
+  }
+  
+  .rkt-header-shopping-page-redirect:before {
+	  content: 'Minha conta';
+	  font-size: 12px;
+	  line-height: 100%;
+	  display: flex;
+	  align-items: center;
+	  background: var(--color-general-primary);
+	  padding: 4px 12px;
+	  border-radius: 999px;
+	  color: #000;
+  }
+  
+  .menu-trigger-holder {
+	  order: 2;
+  }
+  
+  .menu-trigger-holder svg.mobile.-block {
+	  display: none !important;
+  }
+  
+  .menu-trigger {
+	  padding: 0;
+  }
+  
+  .menu-trigger:before {
+	  content: '';
+	  width: 24px;
+	  height: 24px;
+	  background: url(https://symmagency.github.io/icongames/assets/icon-menu.svg)
+		  center no-repeat;
+	  display: flex;
+  }
+  
+  .collection-10:before {
+	  content: "";
+	  width: 100%;
+	  height: 80px;
+	  background: url(https://symmagency.github.io/icongames/assets/psplus.png) top no-repeat;
+	  background-size: 100%;
+	  display: block;
+  }
+  
+  .collection-10 {
+	  background: #ebedf4;
+	  padding-bottom: 60px;
+	  border-radius: 0 0 16px 16px;
+  }
+  
+  .collection-10 .holder-collection .holder-left h2 {
+	  color: #000;
+  }
+  
+  .collection-10 .box-product .product-name, .collection-10 .box-product .product-prices * {
+	  color: #000;
+  }
+  
+  .collection-10 .box-product .product-prices .product-old-price {
+	  opacity: .5;
+  }
+  
+  @media screen and (max-width: 768px) {
+	  .main-banner .splide__slide {
+		  max-width: calc(100% - 0px) !important;
+	  }
+  
+	  .header-content
+		  .header-content-right
+		  > div:not(.rkt-header-shopping-page-redirect) {
+		  width: 60px;
+	  }
+  
+	  .main-banner .splide__list {
+		  width: 100% !important;
+	  }
+  
+	  .main-banner .splide:not(.splide--ttb) .splide__pagination button {
+		  width: 16px !important;
+		  height: 2px !important;
+	  }
+  
+	  .products-list .splide__slide {
+		  width: 230px !important;
+	  }
+  
+	  #section-header .h-inline-container {
+		  padding: 0px 16px !important;
+	  }
+  
+	  .products-list .splide.is-active .splide__list {
+		  justify-content: flex-start;
+		  width: 100% !important;
+		  overflow-x: scroll !important;
+		  transform: none !important;
+	  }
+  
+	  .products-list ul.splide__pagination {
+		  display: none !important;
+	  }
+  
+	  .icon-search.i-s-header {
+		  width: 40px;
+		  height: 44px;
+		  background: url(https://symmagency.github.io/icongames/assets/icon-search.svg)
+			  no-repeat center;
+	  }
+  
+	  .holder-search {
+		  display: none !important;
+	  }
+  
+	  .holder-search.open {
+		  display: block !important;
+	  }
+	  .c-highlight-header__title.--mobile {
+		  font-size: 24px;
+		  text-align: left;
+	  }
+  
+	  .product-prices .discount-tag {
+		  height: 20px;
+		  border: 0;
+		  padding: 0 8px;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  width: fit-content;
+		  font-size: 11px;
+	  }
+  
+	  .box-product .product-prices {
+		  display: flex;
+		  flex-direction: row-reverse;
+		  justify-content: flex-end;
+		  gap: 8px;
+	  }
+  
+	  .banner_3-7 .holder-banner-3 > .online {
+		  display: flex;
+		  flex-direction: row;
+		  flex-wrap: nowrap;
+		  width: 100%;
+		  overflow-x: scroll;
+		  position: relative;
+		  padding-bottom: 32px;
+	  }
+  
+	  .banner_3-7 .online .banner {
+		  min-width: 304px;
+	  }
+  
+	  .banner_3-7 .holder-banner-3:before {
+		  content: 'Destaques da semana';
+		  display: block;
+		  font-size: 24px;
+		  font-weight: normal;
+		  margin-bottom: 20px;
+	  }
+  
+	  .banner_3-7 .holder-banner-3 > .online::-webkit-scrollbar {
+		  height: 2px;
+		  bottom: 0px;
+		  position: relative;
+	  }
+  
+	  .banner_3-7 .holder-banner-3 > .online::-webkit-scrollbar-track {
+		  background: #d9d9d920;
+	  }
+  
+	  .banner_3-7 .holder-banner-3 > .online::-webkit-scrollbar-thumb {
+		  background: #d7df21;
+	  }
+  }
+  
