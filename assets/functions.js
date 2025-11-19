@@ -32,13 +32,24 @@ $(window).on('resize', function () {
     }
 });
 
-    // Adiciona a lógica para mover o discount-tag para dentro do product-prices
+// Adiciona a lógica para mover o discount-tag para dentro do product-prices, retentando até conseguir
+function tryMoveDiscountTag(attempts = 10, delay = 200) {
+    let movedAll = true;
     $('.box-product').each(function () {
         const discount = $(this).find('.holder-image .discount-tag');
         const target = $(this).find('.product-prices');
         if (discount.length && target.length) {
             target.append(discount);
+        } else if (discount.length && !target.length) {
+            movedAll = false;
         }
     });
+    if (!movedAll && attempts > 0) {
+        setTimeout(function () {
+            tryMoveDiscountTag(attempts - 1, delay);
+        }, delay);
+    }
+}
+tryMoveDiscountTag();
 
 });
