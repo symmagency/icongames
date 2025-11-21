@@ -971,4 +971,126 @@ body.dark-mode .side-cart-header {
 		background: url(https://symmagency.github.io/icongames/assets/psnplus-desk.png)
 			top no-repeat;
 	}
+
+	.highlight-container {
+		padding: 24px;
+		width: 100%;
+		flex: 1;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 10px;
+	}
+
+	.highlight-holder > div {
+		display: flex;
+		width: 100%;
+	}
+
+	.highlight-text {
+		color: #fff !important;
+		max-width: 100%;
+		font-size: 16px;
+	}
+
+	.highlight-container-flexible {
+		width: 100% !important;
+		gap: 10px;
+	}
+
+	.collection-10:before {
+		background: url(https://symmagency.github.io/icongames/assets/psnplus-desk.png)
+			top no-repeat;
+		height: 180px;
+	}
+
+	.footer .holder-footer-info > div {
+		padding: 16px;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 10px;
+		max-width: 235px;
+	}
+
+	.footer .holder-footer .expandable-holder {
+		background: transparent;
+	}
+
+	.footer .-contact .contact-phone,
+	.footer .-contact .contact-whatsapp {
+		display: none;
+	}
+
+	.footer .-contact {
+		margin: 0;
+	}
+
+	.category-content .filters {
+		width: 250px;
+	}
+
+	ul.crumbs {
+		padding: 4px 16px;
+		border-radius: 8px;
+		background: rgba(255, 255, 255, 0.1);
+	}
+
+	.category-content .filters {
+		width: 250px;
+	}
+
+	.category-content .container {
+		max-width: 1000px;
+		position: relative;
+	}
+
+	.category-content .holder-results {
+		width: 100%;
+		flex: auto;
+		min-width: auto;
+	}
+
+	.main-banner .holder-main-banner {
+		padding: 0 20px;
+	}
+
+	.header-content .logo {
+		max-width: 90px;
+	}
+	
+	.main-product-images {
+    max-width: 500px;
+}
+
+.main-product-images-nav {
+    display: none;
+}
+
+.main-product-image {
+    width: 500px;
+}
+
+.main-product-image .splide__slide {
+    max-width: 500px;
+    justify-content: center;
+    display: flex;
+}
+}
+
+.-contact .expandable-holder ul:after {
+	content: 'Atendimento de segunda a sexta das 8 horas às 23 horas.';
+	display: block;
+	width: 100%;
+	text-wrap: auto;
+}
+
+.vue-slider__track {
+	z-index: 10;
+}
+
+.vue-slider input[type='range'] {
+	background: rgba(255, 255, 255, 0.2) !important;
+	border: 0 !important;
+}
+
+.selected-filters .selected-filter {
+	background-color: var(--color-general-primary);
+	color: #000;
 }
