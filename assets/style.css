@@ -587,6 +587,14 @@ body.dark-mode .side-cart-header {
 	margin-top: 12px;
 }
 
+.banner_3-7 .holder-banner-3:before {
+	content: 'Destaques da semana';
+	display: block;
+	font-size: 24px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
 @media screen and (max-width: 768px) {
 	.main-banner .splide__slide {
 		max-width: calc(100% - 0px) !important;
@@ -675,14 +683,6 @@ body.dark-mode .side-cart-header {
 
 	.banner_3-7 .online .banner {
 		min-width: 304px;
-	}
-
-	.banner_3-7 .holder-banner-3:before {
-		content: 'Destaques da semana';
-		display: block;
-		font-size: 24px;
-		font-weight: normal;
-		margin-bottom: 20px;
 	}
 
 	.banner_3-7 .holder-banner-3 > .online::-webkit-scrollbar {
