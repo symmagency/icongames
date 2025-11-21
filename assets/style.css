@@ -556,7 +556,7 @@ body.dark-mode .side-cart-header {
 }
 
 .collection-11 .box-product .product-prices {
-	display: none;
+	display: none !important;
 }
 
 .collection-11 .product-name:after {
