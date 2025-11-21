@@ -46,4 +46,6 @@ $(window).on('resize', function () {
     moveDiscountTag();
     setTimeout(moveDiscountTag, 500); // tenta novamente após 500ms, em caso de renderização tardia
 
+    $('.product-specifications').append($('.product-specifications > .container:first-child'));
+
 });

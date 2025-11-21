@@ -192,7 +192,7 @@ section.collection.collection-10
 	display: none;
 }
 
-.image-ratio {
+.box-product .image-ratio {
 	padding: 0;
 	height: 296px;
 	border-radius: 8px;
@@ -630,5 +630,9 @@ input {
 
 	.main-product-images {
 		position: relative;
+	}
+	
+	.main-product-content .modal-zoom-mobile.is-active {
+		z-index: 1000000;
 	}
 }
