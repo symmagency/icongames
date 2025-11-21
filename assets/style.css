@@ -539,6 +539,54 @@ body.dark-mode .side-cart-header {
 	display: none;
 }
 
+.collection-11 .box-product .holder-image img {
+	height: 166px;
+}
+
+.collection-11 .image-ratio {
+	height: 166px;
+}
+
+.collection-11 .products-list .splide__slide {
+	width: 300px !important;
+}
+
+.collection-11 .product-name {
+	margin-top: 10px !important;
+}
+
+.collection-11 .box-product .product-prices {
+	display: none;
+}
+
+.collection-11 .product-name:after {
+	content: 'Acesse o produto e deixe o seus dados para receber um e-mail quando chegar.';
+	display: block;
+	opacity: 0.5;
+	font-size: 12px;
+	line-height: 15px;
+	margin-top: 12px;
+}
+
+.collection-11 .product-name {
+	-webkit-line-clamp: 3;
+}
+
+.collection-11 .holder-info:after {
+	content: 'Em breve';
+	display: block;
+	font-size: 11px;
+	color: #000;
+	background: #d7df21;
+	width: fit-content;
+	height: 21px;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	border-radius: 4px;
+	margin-top: 12px;
+}
+
 @media screen and (max-width: 768px) {
 	.main-banner .splide__slide {
 		max-width: calc(100% - 0px) !important;
@@ -649,54 +697,6 @@ body.dark-mode .side-cart-header {
 
 	.banner_3-7 .holder-banner-3 > .online::-webkit-scrollbar-thumb {
 		background: #d7df21;
-	}
-
-	.collection-11 .box-product .holder-image img {
-		height: 166px;
-	}
-
-	.collection-11 .image-ratio {
-		height: 166px;
-	}
-
-	.collection-11 .products-list .splide__slide {
-		width: 300px !important;
-	}
-
-	.collection-11 .product-name {
-		margin-top: 10px !important;
-	}
-
-	.collection-11 .box-product .product-prices {
-		display: none;
-	}
-
-	.collection-11 .product-name:after {
-		content: 'Acesse o produto e deixe o seus dados para receber um e-mail quando chegar.';
-		display: block;
-		opacity: 0.5;
-		font-size: 12px;
-		line-height: 15px;
-		margin-top: 12px;
-	}
-
-	.collection-11 .product-name {
-		-webkit-line-clamp: 3;
-	}
-
-	.collection-11 .holder-info:after {
-		content: 'Em breve';
-		display: block;
-		font-size: 11px;
-		color: #000;
-		background: #d7df21;
-		width: fit-content;
-		height: 21px;
-		display: flex;
-		align-items: center;
-		padding: 0 10px;
-		border-radius: 4px;
-		margin-top: 12px;
 	}
 
 	.highlight .splide.is-active .splide__list {
@@ -897,52 +897,78 @@ body.dark-mode .side-cart-header {
 	.main-product-unavailable.alert.-yellow {
 		display: none;
 	}
-	
-	
-.product:has(.main-product-unavailable) .collection,
-.product:has(.main-product-unavailable) .product-reviews{
-    display: none;
+
+	.product:has(.main-product-unavailable) .collection,
+	.product:has(.main-product-unavailable) .product-reviews {
+		display: none;
+	}
+
+	.category-content .mosaic-column .box-product:not(.-center) {
+		width: 100%;
+	}
+
+	.category-content .box-product .product-prices {
+		flex-direction: column-reverse;
+	}
+
+	.category-content .box-product .holder-image img {
+		max-height: fit-content;
+	}
+
+	.category-content .box-product .image-ratio {
+		height: 240px;
+	}
+
+	.category-options {
+		margin: 20px 16px;
+		border-radius: 999px;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.category-options > div.flex.-vcenter {
+		width: fit-content;
+		flex: auto;
+		align-items: center;
+	}
+
+	.filters-trigger {
+		padding: 0;
+	}
+
+	.category-content .grid-list .box-product:not(.product-card):not(.-clear) {
+		width: 100%;
+		align-items: center;
+	}
+
+	.holder-results .theme-title {
+		width: 100%;
+		text-align: center;
+	}
 }
 
-.category-content .mosaic-column .box-product:not(.-center) {
-   width: 100%;
-}
+@media screen and (min-width: 768px) {
+	.collection .container {
+		padding: 0 20px;
+	}
 
-.category-content .box-product .product-prices {
-    flex-direction: column-reverse;
-}
+	.box-product .product-prices .discount-tag {
+		border: 0;
+		height: 21px;
+		display: flex;
+		width: fit-content;
+		align-items: center;
+		font-size: 12px;
+	}
 
-.category-content .box-product .holder-image img {
-    max-height: fit-content;
-}
+	.collection .box-product .product-prices {
+		flex-direction: row-reverse;
+		display: flex;
+		justify-content: flex-end;
+		gap: 12px;
+	}
 
-.category-content .box-product .image-ratio {
-    height: 240px;
-}
-
-.category-options {
-    margin: 20px 16px;
-    border-radius: 999px;
-    border: 1px solid rgba(255,255,255,.3);
-}
-
-.category-options>div.flex.-vcenter {
-    width: fit-content;
-    flex: auto;
-    align-items: center;
-}
-
-.filters-trigger {
-    padding: 0;
-}
-
-.category-content .grid-list .box-product:not(.product-card):not(.-clear) {
-    width: 100%;
-    align-items: center;
-}
-
-.holder-results .theme-title {
-    width: 100%;
-    text-align: center;
-}
+	.collection-10:before {
+		background: url(https://symmagency.github.io/icongames/assets/psnplus-desk.png)
+			top no-repeat;
+	}
 }
