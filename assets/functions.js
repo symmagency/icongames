@@ -49,6 +49,11 @@ $(window).on('resize', function () {
     $('.product-specifications').append($('.product-specifications > .container:first-child'));
 
     function tryRepositionElements(retries = 10, delay = 200) {
+
+        if (window.innerWidth <= 768) {
+            return; // Só executa acima de 768px
+        }
+        
         const $spec = $('.product-specifications');
         const $mainImages = $('.main-product-images');
         const $collection = $('.product .collection');
