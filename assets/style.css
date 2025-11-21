@@ -1063,8 +1063,9 @@ body.dark-mode .side-cart-header {
 		display: none;
 	}
 
-	.main-product-image {
-		width: 500px;
+	.main-product-image, .main-product-image .zoom-on-hover {
+		max-width: 480px;
+		margin: 0 !important;
 	}
 
 	.main-product-image .splide__slide {
