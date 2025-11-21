@@ -407,6 +407,138 @@ input {
 	font-weight: normal;
 }
 
+.product-specifications .container .-holder {
+	padding: 0;
+	background: none !important;
+	border: 0;
+}
+
+.editor-theme p {
+	display: flex;
+	justify-content: space-between;
+	color: #ffffffb0;
+}
+
+.product-specifications .theme-title {
+	display: none;
+}
+
+.editor-theme {
+	margin: 0 !important;
+}
+
+.product .reference-availability {
+	display: none;
+}
+
+.product span.flag {
+	border: 1px solid #d7df21;
+	background: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 10px !important;
+}
+
+.holder-variant-button .variant-button:first-child::after {
+	content: 'Jogue em seu perfil';
+	font-size: 12px;
+}
+
+.holder-variant-button .variant-button {
+	font-size: 16px !important;
+}
+
+.holder-variant-button .variant-button:nth-child(2)::after {
+	content: 'Jogue em nosso perfil';
+	font-size: 12px;
+}
+
+body.dark-mode
+	.main-product-content
+	.holder-variant-button
+	.variant-button.selected {
+	color: var(--color-general-primary);
+	background: none;
+	border: 1px solid var(--color-general-primary) !important;
+}
+
+.footer .holder-footer .logo img {
+	max-width: 71px;
+}
+
+.main-product-content .show-installments {
+	font-size: 16px;
+}
+
+.product-specifications > .container:first-child .editor-theme p:first-child {
+	background: #ffffff1f;
+	padding: 16px 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	color: #fff;
+	justify-content: center;
+	gap: 20px;
+	align-items: center;
+}
+
+.product .holder-collection .collection-name {
+	width: 100%;
+	text-align: left;
+	margin: 0;
+	font-size: 0;
+}
+
+.product .holder-collection .collection-name:after {
+	content: 'Quem viu, também viu:';
+	font-size: 24px;
+}
+
+.product-reviews .theme-title span {
+	font-size: 32px !important;
+	font-weight: normal;
+}
+
+.product-reviews .theme-title.active span {
+	color: var(--color-general-primary);
+	text-decoration: underline;
+}
+
+body.dark-mode .product-reviews .holder-product-reviews-title:not(.single) {
+	background: none !important;
+}
+
+body.dark-mode .product-reviews .tab-content {
+	background: none !important;
+	border: 0;
+}
+
+.product-reviews > div {
+	background: none;
+}
+.product-reviews .theme-title span.-quantity {
+	display: none;
+}
+
+body.dark-mode .side-cart-button-container,
+body.dark-mode .side-cart-content,
+body.dark-mode .side-cart-header {
+	background: #101014;
+}
+
+.mini-cart-holder .image-ratio img {
+	width: 54px;
+	height: 70px;
+	border-radius: 6px;
+}
+
+.side-cart-subtotal-after-discounts {
+	color: #9aff97;
+}
+
+.main-product-info:has(.main-product-unavailable) .main-product-prices {
+	display: none;
+}
+
 @media screen and (max-width: 768px) {
 	.main-banner .splide__slide {
 		max-width: calc(100% - 0px) !important;
@@ -611,7 +743,11 @@ input {
 
 	.container.main-product-content .main-product-holder .main-product-info {
 		margin-top: -60px !important;
-		z-index: 1000;
+		z-index: 100;
+	}
+
+	.header-content .categories {
+		z-index: 10000;
 	}
 
 	.zoom-hint {
@@ -631,8 +767,182 @@ input {
 	.main-product-images {
 		position: relative;
 	}
-	
+
 	.main-product-content .modal-zoom-mobile.is-active {
 		z-index: 1000000;
 	}
+
+	.h-inline-container .header-content {
+		padding: 12px 0;
+	}
+
+	.products-list.flex .box-product,
+	.products-list.flex .box-product-wrapper,
+	.products-list > .flex .box-product,
+	.products-list > .flex {
+		flex: auto;
+		width: 230px;
+	}
+
+	.products-list > .flex {
+		display: flex;
+		flex-wrap: nowrap;
+		width: fit-content;
+	}
+
+	.products-list {
+		overflow-x: scroll;
+	}
+
+	.products-list > .flex .-clear {
+		display: none !important;
+	}
+
+	.product-reviews .alert.-yellow {
+		margin: 0 !important;
+	}
+
+	.header-content .categories ul li.shopper-mobile-container {
+		padding: 16px 24px;
+		background: var(--color-general-primary);
+		border-radius: 999px;
+		color: #000;
+		justify-content: center;
+		font-size: 16px;
+	}
+
+	.header-content .categories ul li.shopper-mobile-container i {
+		display: none;
+	}
+
+	body.dark-mode hr {
+		border-color: transparent;
+	}
+
+	.h-navigation a,
+	.h-navigation .main-link {
+		font-size: 16px;
+		color: #fff;
+	}
+
+	.h-anchor-container {
+		padding: 12px 0;
+	}
+
+	span.header-topbar-contact-phone.contact-phone {
+		display: none;
+	}
+
+	body.dark-mode .header-content .categories {
+		background: #101014;
+	}
+
+	span.header-topbar-contact-phone.contact-phone {
+		display: none;
+	}
+
+	body.dark-mode .header-content .categories {
+		background: #101014;
+	}
+
+	body.dark-mode .nav-drawer-content > .selected-category-name {
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.categories .--all-products {
+		color: var(--color-general-primary) !important;
+		font-size: 16px;
+	}
+
+	body.dark-mode .nav-drawer-content {
+		background: #101014;
+	}
+
+	body.dark-mode .nav-drawer-content .h-category-child {
+		background: transparent;
+	}
+
+	body.dark-mode .nav-drawer-content .h-category-child a {
+		color: #fff !important;
+	}
+
+	body.dark-mode .nav-drawer-content .spacer {
+		border-color: transparent;
+	}
+
+	body.dark-mode .nav-drawer-content .rocket-button.--close-btn {
+		font-size: 16px;
+		color: #fff;
+		padding: 16px 20px;
+		width: fit-content !important;
+		height: 56px;
+		padding-left: 38px;
+	}
+
+	.header-content .header-content-right {
+		z-index: 1000;
+	}
+
+	.container.main-product-content:has(.main-product-unavailable)
+		.main-product-images {
+		height: fit-content;
+	}
+
+	.container.main-product-content:has(.main-product-unavailable)
+		.main-product-holder {
+		min-height: fit-content;
+	}
+
+	.main-product-unavailable.alert.-yellow {
+		display: none;
+	}
+	
+	
+.product:has(.main-product-unavailable) .collection,
+.product:has(.main-product-unavailable) .product-reviews{
+    display: none;
+}
+
+.category-content .mosaic-column .box-product:not(.-center) {
+   width: 100%;
+}
+
+.category-content .box-product .product-prices {
+    flex-direction: column-reverse;
+}
+
+.category-content .box-product .holder-image img {
+    max-height: fit-content;
+}
+
+.category-content .box-product .image-ratio {
+    height: 240px;
+}
+
+.category-options {
+    margin: 20px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.3);
+}
+
+.category-options>div.flex.-vcenter {
+    width: fit-content;
+    flex: auto;
+    align-items: center;
+}
+
+.filters-trigger {
+    padding: 0;
+}
+
+.category-content .grid-list .box-product:not(.product-card):not(.-clear) {
+    width: 100%;
+    align-items: center;
+}
+
+.holder-results .theme-title {
+    width: 100%;
+    text-align: center;
+}
 }
