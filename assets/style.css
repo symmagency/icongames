@@ -948,6 +948,10 @@ body.dark-mode .side-cart-header {
 	.over-background {
 		z-index: 999;
 	}
+
+	.modal-background {
+		z-index: 10000000;
+	}
 }
 
 @media screen and (min-width: 768px) {
