@@ -1084,6 +1084,22 @@ body.dark-mode .side-cart-header {
 	.product:has(.main-product-unavailable) .collection {
 		display: none;
 	}
+
+	.product .collection .container {
+		padding: 0;
+	}
+	
+	.main-product-images div>.flex.-wrap {
+		flex-wrap: nowrap;
+	}
+	
+	.product .products-list {
+		overflow-x: scroll;
+	}
+	
+	.products-list>.flex .box-product-wrapper.-clear {
+		display: none!important;
+	}
 }
 
 .-contact .expandable-holder ul:after {
