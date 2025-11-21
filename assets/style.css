@@ -944,6 +944,10 @@ body.dark-mode .side-cart-header {
 		width: 100%;
 		text-align: center;
 	}
+
+	.over-background {
+		z-index: 999;
+	}
 }
 
 @media screen and (min-width: 768px) {
