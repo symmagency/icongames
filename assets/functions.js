@@ -47,6 +47,9 @@ $(window).on('resize', function () {
     setTimeout(moveDiscountTag, 500); // tenta novamente após 500ms, em caso de renderização tardia
 
     function tryRepositionElements(retries = 10, delay = 200) {
+        if (window.innerWidth <= 768) {
+            return; // Só executa acima de 768px
+        }
         const $spec = $('.product-specifications');
         const $specContainer = $('.product-specifications > .container:first-child');
         const $mainImages = $('.main-product-images');
