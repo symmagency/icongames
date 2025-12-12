@@ -595,6 +595,13 @@ body.dark-mode .side-cart-header {
 	margin-bottom: 20px;
 }
 
+.box-product.--flag-below-image .holder-image .holder-flags {
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
 @media screen and (max-width: 768px) {
 	.main-banner .splide__slide {
 		max-width: calc(100% - 0px) !important;
