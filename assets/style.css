@@ -1141,3 +1141,7 @@ body.dark-mode .side-cart-header {
 	background-color: var(--color-general-primary);
 	color: #000;
 }
+
+.holder-footer-section .s-footer {
+    margin-left: 10px;
+}

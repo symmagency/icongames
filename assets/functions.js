@@ -22,8 +22,8 @@ function tryInsertSecurityIcons(retries = 10, delay = 200) {
     const $iconSecurity = $('.footer .icon-security');
     if ($iconSecurity.length) {
         $iconSecurity.after(`
-            <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.icongamesstore.com.br%2F&hl=en"><img src="https://symmagency.github.io/icongames/assets/google-s-b.webp" alt="Google Safe Browsing"/></a>
-            <img src="https://symmagency.github.io/icongames/assets/selo-protegido.webp" alt="Site protegido"/>
+            <a class="s-footer" href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.icongamesstore.com.br%2F&hl=en" target="_blank"><img src="https://symmagency.github.io/icongames/assets/google-s-b.webp" alt="Google Safe Browsing"/></a>
+            <img class="s-footer" src="https://symmagency.github.io/icongames/assets/selo-protegido.webp" alt="Site protegido"/>
         `);
     } else if (retries > 0) {
         setTimeout(function () {
