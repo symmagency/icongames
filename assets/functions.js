@@ -18,10 +18,21 @@ function tryInsertIconSearch(retries = 10, delay = 200) {
     }
 }
 
-$('.footer .icon-security').after(`
-    <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.icongamesstore.com.br%2F&hl=en"><img src="https://symmagency.github.io/icongames/assets/google-s-b.webp" alt="Google Safe Browsing"/></a>
-    <img src="https://symmagency.github.io/icongames/assets/selo-protegido.webp" alt="Site protegido"/>
-`);
+function tryInsertSecurityIcons(retries = 10, delay = 200) {
+    const $iconSecurity = $('.footer .icon-security');
+    if ($iconSecurity.length) {
+        $iconSecurity.after(`
+            <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.icongamesstore.com.br%2F&hl=en"><img src="https://symmagency.github.io/icongames/assets/google-s-b.webp" alt="Google Safe Browsing"/></a>
+            <img src="https://symmagency.github.io/icongames/assets/selo-protegido.webp" alt="Site protegido"/>
+        `);
+    } else if (retries > 0) {
+        setTimeout(function () {
+            tryInsertSecurityIcons(retries - 1, delay);
+        }, delay);
+    }
+}
+
+tryInsertSecurityIcons();
 
 // Executa na inicialização e re-executa ao redimensionar a janela (apenas para inserir, não duplicar)
 $(document).ready(function () {
