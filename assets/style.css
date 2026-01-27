@@ -1032,10 +1032,10 @@ body.dark-mode .side-cart-header {
 		background: transparent;
 	}
 
-	.footer .-contact .contact-phone,
+	/* .footer .-contact .contact-phone,
 	.footer .-contact .contact-whatsapp {
 		display: none;
-	}
+	} */
 
 	.footer .-contact {
 		margin: 0;
